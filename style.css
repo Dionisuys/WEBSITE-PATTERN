@@ -1,0 +1,136 @@
+/* общие стили */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* управление переполнением */
+body,
+html {
+    overflow-x: hidden;
+}
+
+/* навигационное меню */
+nav {
+    margin: auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* переключатель меню */
+#checkbox-menu,
+.toggle {
+    display: none;
+}
+
+/* список меню */
+.menu {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+/* элементы меню */
+.menu li a {
+    color: #000;
+    text-decoration: none;
+    align-self: center;
+    font-size: 13px;
+    padding: 10px 15px;
+    transition: background .2s linear;
+}
+
+/* стили при наведении */
+.menu li a:hover {
+    background: #ffcc01;
+    border-radius: 3px;
+}
+
+/* логотип */
+.menu li a.logo {
+    font-size: 25px;
+    margin-right: 240px;
+}
+
+/* контакты */
+.menu li a.contacts {
+    margin-right: 100px;
+}
+
+/* медиа-запросы для мобильных устройств */
+@media screen and (max-width: 765px) {
+
+    /* Отображение кнопки-переключателя */
+    .toggle {
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        width: 100%;
+        color: #000;
+        background: #ffcc01;
+        transition: all .1s linear;
+    }
+
+    /* Стили при наведении на кнопку-переключатель */
+    .toggle:hover {
+        background: #ffcc01;
+    }
+
+    /* Показать выпадающее меню при активации чекбокса */
+    #checkbox-menu:checked+label .touch li {
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s linear;
+    }
+
+    /* Стили для области выпадающего меню */
+    #checkbox-menu:checked+label .touch {
+        height: 350px;
+    }
+
+    /* Стили для меню в мобильной версии */
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height .3s linear;
+    }
+
+    /* Стили для элементов меню в мобильной версии */
+    .menu li {
+        display: flex;
+        align-self: center;
+        width: 95%;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /* Стили для ссылок в элементах меню в мобильной версии */
+    .menu li a {
+        width: 95%;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+    }
+
+    /* Стили для логотипа в мобильной версии */
+    .menu li a.logo {
+        font-size: 21px;
+        margin-right: 0px;
+    }
+
+    /* Стили для контактов в мобильной версии */
+    .menu li a.contacts {
+        margin-right: 0px;
+    }
+}
