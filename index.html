@@ -1,50 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width   =device-width initial-scale=10" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8b2d4048a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width   =device-width initial-scale=10" />
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/8b2d4048a6.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu">
+          <ul class="menu touch">
+            <li><a class="logo" href="#">Luxestate</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Apariment</a></li>
+            <li><a href="#">How it Work</a></li>
+            <li><a href="#">Agent</a></li>
+            <li><a class="contacts" href="#">Contact Us</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Getting Started</a></li>
+          </ul>
+          <span class="toggle">☰</span>
+        </label>
+      </nav>
+    </header>
 
-<body>
+    <main>
+      <section class="intro wrapper">
+        <div class="intro-img">
+          <p class="intro-text">
+            Find Your New <br />
+            Modern Apartment
+          </p>
+        </div>
 
-  <header>
-    <nav>
-      <input type="checkbox" id="checkbox-menu">
-      <label for="checkbox-menu">
-        <ul class="menu touch">
-          <li><a class="logo" href="#">Luxestate</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Apariment</a></li>
-          <li><a href="#">How it Work</a></li>
-          <li><a href="#">Agent</a></li>
-          <li><a class="contacts" href="#">Contact Us</a></li>
-          <li><a href="#">Join Us</a></li>
-          <li><a href="#">Getting Started</a></li>
-        </ul>
-        <span class="toggle">☰</span>
-      </label>
-    </nav>
-  </header>
+        <div class="intro-contacts">
+          <p><i class="fa-solid fa-phone"></i>(000)123-24-32</p>
+          <p>
+            <i class="fa-sharp fa-solid fa-location-dot"></i>Melburn, Australia
+          </p>
+        </div>
+      </section>
 
-  <main>
-    <section class="intro wrapper">
-      <div class="intro-img">
-        <p class="intro-text">Find Your New <br>
-          Modern Apartment</p>
-      </div>
+      <section class="stats wrapper">
+        <div class="stats-text">
+          <h2>
+            Our's Company <br />
+            Statistics
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non,
+            aut doloremque, ipsam quas temporibus numquam hic quibusdam dolor
+            culpa fugit accusamus rem, nemo aliquam odit iusto eum in tempora?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+            quia, voluptatum consequuntur rerum, nostrum impedit repudiandae
+            quam dolor unde delectus ducimus atque. Quod consequuntur molestias
+            neque nostrum exercitationem perferendis architecto!
+          </p>
+        </div>
 
-      <div class="intro-contacts">
-        <p><i class="fa-solid fa-phone"></i>(000)123-24-32</p>
-        <p><i class="fa-sharp fa-solid fa-location-dot"></i>Melburn, Australia</p>
-      </div>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
+        <div class="stats-num">
+          <div class="stats-line">
+            <div class="square">
+              <span class="stats-square">2234</span>
+              <span class="stats-text">Lorem.</span>
+            </div>
+            <div class="square">
+              <span class="stats-square">5521</span>
+              <span class="stats-text">Lorem.</span>
+            </div>
+          </div>
+          <div class="stats-line">
+            <div class="square">
+              <span class="stats-square">2214</span>
+              <span class="stats-text">Lorem.</span>
+            </div>
+            <div class="square">
+              <span class="stats-square">9821</span>
+              <span class="stats-text">Lorem.</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="apartments">
+        <div class="wrapper apart">
+          <h2>
+            More than 500+ <br />
+            Appartments For Rent
+          </h2>
+          <div class="cards">
+            <div class="card">
+              <img src="images/ofice.jpg" alt="" />
+              <div class="card-container">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="card-info">
+                  <div class="money">$5000</div>
+                  <div class="info">
+                    <span><i class="fa-solid fa-shower"></i>2BA</span>
+                    <span><i class="fa-solid fa-bed"></i>2BD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/ofice.jpg" alt="" />
+              <div class="card-container">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="card-info">
+                  <div class="money">$5000</div>
+                  <div class="info">
+                    <span><i class="fa-solid fa-shower"></i>2BA</span>
+                    <span><i class="fa-solid fa-bed"></i>2BD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/ofice.jpg" alt="" />
+              <div class="card-container">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="card-info">
+                  <div class="money">$5000</div>
+                  <div class="info">
+                    <span><i class="fa-solid fa-shower"></i>2BA</span>
+                    <span><i class="fa-solid fa-bed"></i>2BD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/ofice.jpg" alt="" />
+              <div class="card-container">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="card-info">
+                  <div class="money">$5000</div>
+                  <div class="info">
+                    <span><i class="fa-solid fa-shower"></i>2BA</span>
+                    <span><i class="fa-solid fa-bed"></i>2BD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/ofice.jpg" alt="" />
+              <div class="card-container">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="card-info">
+                  <div class="money">$5000</div>
+                  <div class="info">
+                    <span><i class="fa-solid fa-shower"></i>2BA</span>
+                    <span><i class="fa-solid fa-bed"></i>2BD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/ofice.jpg" alt="" />
+              <div class="card-container">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="card-info">
+                  <div class="money">$5000</div>
+                  <div class="info">
+                    <span><i class="fa-solid fa-shower"></i>2BA</span>
+                    <span><i class="fa-solid fa-bed"></i>2BD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons-search">
+            <form action="">
+              <input type="text" placeholder="Search Locations" />
+              <input type="submit" value="Search" />
+            </form>
+            <button class="all">View All Apartments</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="wrapper">
+          <h2>How It Work</h2>
+          <p class="steps-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Excepturi maxime distinctio provident itaque, ipsa sint.
+          </p>
+          <p class="steps-text mbtext">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Distinctio, beatae.
+          </p>
+          <div class="steps-container">
+            <div class="stepblock" id="stepbl1">
+              <p class="step-num">01</p>
+              <h4><span>01</span>Find Your Location</h4>
+              <p class="step-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic
+                ea rem officiis a sunt?
+              </p>
+              <p class="stepinfolast" id="sepbrdr1">Find Location</p>
+            </div>
+            <div class="stepblock" id="stepbl2">
+              <p class="step-num">02</p>
+              <h4><span>02</span>Find Your Location</h4>
+              <p class="step-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic
+                ea rem officiis a sunt?
+              </p>
+              <p class="stepinfolast" id="sepbrdr2">Find Location</p>
+            </div>
+            <div class="stepblock" id="stepbl3">
+              <p class="step-num">03</p>
+              <h4><span>03</span>Find Your Location</h4>
+              <p class="step-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic
+                ea rem officiis a sunt?
+              </p>
+              <p class="stepinfolast" id="sepbrdr3">Find Location</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services wrapper">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="serv-container">
+          <div class="serv-img-container">
+            <img src="images/servroom.jpg" alt="" />
+          </div>
+          <div class="serv-text">
+            <h4>Renting</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+              iste, nulla consectetur, accusantium error sed minima repellat
+              amet a dolorem reprehenderit aliquid laudantium eaque impedit.
+            </p>
+            <h4>Renting</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+              iste, nulla consectetur, accusantium error sed minima repellat
+              amet a dolorem reprehenderit aliquid laudantium eaque impedit.
+            </p>
+            <h4>Renting</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+              iste, nulla consectetur, accusantium error sed minima repellat
+              amet a dolorem reprehenderit aliquid laudantium eaque impedit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="agents">
+        <div class="wrapper">
+          <h2>Meet Our Agents</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Quidem architecto eveniet perspiciatis nesciunt veritatis libero!
+          </p>
+          <div class="agent-cards">
+            <div class="agent-card">
+              <img src="images/agent.jpg" alt="" />
+              <div class="agent-info">
+                <p>Agent</p>
+                <div class="agent-block">
+                  <p class="agent-name">Mr. Obi-Wan Kenobi</p>
+                  <div class="social">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="agent-card">
+              <img src="images/agent.jpg" alt="" />
+              <div class="agent-info">
+                <p>Agent</p>
+                <div class="agent-block">
+                  <p class="agent-name">Mr. Obi-Wan Kenobi</p>
+                  <div class="social">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="agent-card">
+              <img src="images/agent.jpg" alt="" />
+              <div class="agent-info">
+                <p>Agent</p>
+                <div class="agent-block">
+                  <p class="agent-name">Mr. Obi-Wan Kenobi</p>
+                  <div class="social">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
