@@ -1,32 +1,32 @@
-let stepbl1 = document.getElementById("stepbl1");
-let sepbrdr1 = document.getElementById("sepbrdr1");
-
-let stepbl2 = document.getElementById("stepbl2");
-let sepbrdr2 = document.getElementById("sepbrdr2");
-
-let stepbl3 = document.getElementById("stepbl3");
-let sepbrdr3 = document.getElementById("sepbrdr3");
-
-stepbl1.onmouseover = function() {
-    sepbrdr1.style.borderBottom = "3px solid white";
+function toggleBorder(stepbl, sepbrdr) {
+  stepbl.addEventListener("mouseover", function () {
+    sepbrdr.style.borderBottom = "3px solid white";
+  });
+  stepbl.addEventListener("mouseout", function () {
+    sepbrdr.style.borderBottom = "3px solid black";
+  });
 }
 
-stepbl1.onmouseout = function() {
-    sepbrdr1.style.borderBottom = "3px solid black";
+for (let i = 1; i <= 3; i++) {
+  let stepbl = document.getElementById("stepbl" + i);
+  let sepbrdr = document.getElementById("sepbrdr" + i);
+  toggleBorder(stepbl, sepbrdr);
 }
 
-stepbl2.onmouseover = function() {
-    sepbrdr2.style.borderBottom = "3px solid white";
-}
+window.addEventListener("scroll", function () {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-stepbl2.onmouseout = function() {
-    sepbrdr2.style.borderBottom = "3px solid black";
-}
+  // Показываем кнопку, если страница прокручена на 200px или больше
+  if (window.pageYOffset > 500) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
 
-stepbl3.onmouseover = function() {
-    sepbrdr3.style.borderBottom = "3px solid white";
-}
-
-stepbl3.onmouseout = function() {
-    sepbrdr3.style.borderBottom = "3px solid black";
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 }
